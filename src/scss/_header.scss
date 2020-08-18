@@ -1,0 +1,51 @@
+header {
+    background: linear-gradient(90deg, rgba(26, 84, 231, 1) 0%, rgba(26, 84, 231, 1) 29%, rgba(255, 255, 255, 1) 29%);
+    .header__full {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        .template__text {
+            a {
+                color: $white;
+                font-size: 24px;
+                font-family: $Sans;
+                background-color: $blue;
+            }
+        }
+        .btn__seach {
+            background-color: $grey;
+            border: none;
+            margin-left: 29px;
+            margin-right: 29px;
+            .img_search {
+                padding: 1.3rem 0.7rem;
+            }
+        }
+        .menu__item {
+            margin-right: 107px;
+            a {
+                font-family: $Sans;
+                font-weight: 500;
+                color: $grey-dark;
+                font-size: 18px;
+                padding-right: 28px;
+            }
+        }
+        .menu__chapter {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            a {
+                font-family: $Sans;
+                font-weight: 500;
+                color: $blue;
+                font-size: 18px;
+                padding-right: 28px;
+            }
+            .fa-circle {
+                color: $blue;
+                font-size: 6px;
+            }
+        }
+    }
+}
