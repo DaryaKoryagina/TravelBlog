@@ -1,9 +1,22 @@
 .slider {
     .slider__blog {
         // position: relative;
+        .slider-cell {
+            position: relative;
+            display: block;
+            width: 100%;
+            .offer__sale_content {
+                position: relative;
+                .slider__fon {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 822px;
+                }
+            }
+        }
     }
     .flickity-prev-next-button {
-        top: 50%;
+        top: 50.4%;
         width: 55px;
         height: 54px;
         border-radius: 0;
@@ -11,7 +24,9 @@
 }
 
 .slider__text {
-    // position: absolute;
+    position: absolute;
+    top: 13.8rem;
+    left: 32rem;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -29,6 +44,7 @@
             font-family: $Serif;
             font-weight: 500;
             font-size: 48px;
+            color: $white;
         }
     }
     &__bg {
@@ -53,6 +69,7 @@
                 padding-right: 10px;
                 font-size: 14px;
                 font-family: $Sans;
+                color: $white;
             }
             a {
                 font-size: 14px;
