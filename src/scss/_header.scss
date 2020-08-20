@@ -1,32 +1,41 @@
 header {
-    background: linear-gradient(90deg, rgba(26, 84, 231, 1) 0%, rgba(26, 84, 231, 1) 29%, rgba(255, 255, 255, 1) 29%);
+    .header__bg {
+        display: flex;
+        align-items: center;
+        background-color: $blue;
+        justify-content: flex-end;
+        padding-right: 34px;
+        background-color: #1a54e7;
+        height: 100%;
+        flex-grow: 1;
+        a {
+            color: $white;
+            font-size: 24px;
+            font-family: $Sans;
+            &:hover {
+                text-decoration: none;
+                color: $light-grey;
+            }
+        }
+    }
+    .header__content {
+        display: flex;
+        align-items: center;
+        flex: 0 0 72.1%;
+    }
     .header__full {
         width: 100%;
         display: flex;
         align-items: center;
         margin: auto;
+        height: 70px;
         .menu_left {
             display: flex;
             align-items: center;
-            flex: 0 0 55%;
-            width: 55%;
             height: auto;
-            .template__text {
-                a {
-                    color: $white;
-                    font-size: 24px;
-                    font-family: $Sans;
-                    background-color: $blue;
-                    &:hover {
-                        text-decoration: none;
-                        color: $light-grey;
-                    }
-                }
-            }
             .btn__seach {
                 background-color: $grey;
                 border: none;
-                margin-left: 29px;
                 margin-right: 29px;
                 &:hover {
                     background-color: $light-blue;
@@ -45,6 +54,7 @@ header {
                 }
             }
             .menu__item {
+                margin-right: 107px;
                 a {
                     font-family: $Sans;
                     font-weight: 500;
@@ -59,8 +69,6 @@ header {
             }
         }
         .menu__chapter {
-            flex: 0 0 45%;
-            width: 45%;
             height: auto;
             display: flex;
             a {

@@ -8,9 +8,14 @@
             .offer__sale_content {
                 position: relative;
                 .slider__fon {
+                    position: absolute;
                     object-fit: cover;
                     width: 100%;
-                    height: 822px;
+                    height: 100%;
+                    z-index: 1;
+                    left: 0;
+                    right: 0;
+                    top: 0;
                 }
             }
         }
@@ -24,22 +29,27 @@
 }
 
 .slider__text {
-    position: absolute;
-    top: 13.8rem;
-    left: 32rem;
+    // position: absolute;
+    // top: 13.8rem;
+    // left: 32rem;
+    z-index: 2;
+    position: relative;
     display: flex;
     justify-content: center;
     margin: auto;
     flex-direction: column;
     &__img {
+        padding-top: 217px;
+        flex: 0 0 100%;
         display: flex;
         justify-content: center;
         padding-bottom: 27px;
     }
     &__text {
+        padding-right: 15px;
+        flex: 0 0 100%;
         line-height: 1.28;
         text-align: center;
-        padding-right: 10px;
         p {
             font-family: $Serif;
             font-weight: 500;
@@ -48,20 +58,31 @@
         }
     }
     &__bg {
-        margin-left: -15px;
-        margin-top: 13.6rem;
+        padding-bottom: 39px;
+        flex: 0 0 100%;
+        padding-top: 219px;
+        // position: absolute;
+        // top: 46.1rem;
+        // width: 62%;
+        // display: flex;
+        // justify-content: space-between;
+        // margin: auto;
+        // margin-left: -15px;
+        // margin-top: 13.6rem;
+        // margin-top: 6rem;
         .text__bg {
-            padding: 6.8px 18px;
-            background: $blue;
-            font-size: 18px;
-            font-family: $Sans;
-            font-weight: 700;
-            color: $white;
+            .text {
+                padding: 6.8px 18px;
+                background: $blue;
+                font-size: 18px;
+                font-family: $Sans;
+                font-weight: 700;
+                color: $white;
+            }
         }
         display: flex;
         justify-content: space-between;
         .text__data {
-            margin-right: -15px;
             display: flex;
             align-items: center;
             .data {
@@ -74,10 +95,11 @@
             a {
                 font-size: 14px;
                 font-family: $Sans;
+                border-bottom: 1px solid $blue;
             }
             .text__line {
                 padding-right: 12px;
-                border-left: 1px solid red;
+                border-left: 1.5px solid $white;
                 height: 13px;
             }
         }
