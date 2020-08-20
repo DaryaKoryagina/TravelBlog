@@ -1,38 +1,44 @@
 header {
-    .header__bg {
-        display: flex;
-        align-items: center;
-        background-color: $blue;
-        justify-content: flex-end;
-        padding-right: 34px;
-        background-color: #1a54e7;
-        height: 100%;
-        flex-grow: 1;
-        a {
-            color: $white;
-            font-size: 24px;
-            font-family: $Sans;
-            &:hover {
-                text-decoration: none;
-                color: $light-grey;
-            }
-        }
-    }
-    .header__content {
-        display: flex;
-        align-items: center;
-        flex: 0 0 72.1%;
-    }
     .header__full {
         width: 100%;
         display: flex;
         align-items: center;
         margin: auto;
-        height: 70px;
         .menu_left {
             display: flex;
             align-items: center;
+            flex: 0 0 55%;
+            width: 55%;
             height: auto;
+            .template__text {
+                display: flex;
+                align-items: center;
+                a {
+                    padding-right: 33px;
+                    height: 68px;
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                    font-size: 24px;
+                    font-family: $Sans;
+                    position: relative;
+                    &:before {
+                        z-index: -1;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 1000px;
+                        height: 100%;
+                        background-color: $blue;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: $light-grey;
+                    }
+                }
+            }
             .btn__seach {
                 background-color: $grey;
                 border: none;
@@ -54,7 +60,6 @@ header {
                 }
             }
             .menu__item {
-                margin-right: 107px;
                 a {
                     font-family: $Sans;
                     font-weight: 500;
@@ -69,9 +74,12 @@ header {
             }
         }
         .menu__chapter {
+            flex: 0 0 45%;
+            width: 45%;
             height: auto;
             display: flex;
             a {
+                padding-top: 20px;
                 font-family: $Sans;
                 font-weight: 500;
                 color: $blue;
@@ -81,9 +89,14 @@ header {
                     text-decoration: none;
                 }
             }
+            .dots {
+                display: flex;
+                align-items: center;
+            }
             .fa-circle {
                 color: $blue;
                 font-size: 6px;
+                padding: 0 2px;
             }
         }
     }

@@ -1,6 +1,5 @@
 .slider {
     .slider__blog {
-        // position: relative;
         .slider-cell {
             position: relative;
             display: block;
@@ -29,9 +28,6 @@
 }
 
 .slider__text {
-    // position: absolute;
-    // top: 13.8rem;
-    // left: 32rem;
     z-index: 2;
     position: relative;
     display: flex;
@@ -61,15 +57,6 @@
         padding-bottom: 39px;
         flex: 0 0 100%;
         padding-top: 219px;
-        // position: absolute;
-        // top: 46.1rem;
-        // width: 62%;
-        // display: flex;
-        // justify-content: space-between;
-        // margin: auto;
-        // margin-left: -15px;
-        // margin-top: 13.6rem;
-        // margin-top: 6rem;
         .text__bg {
             .text {
                 padding: 6.8px 18px;
@@ -78,6 +65,12 @@
                 font-family: $Sans;
                 font-weight: 700;
                 color: $white;
+                &:hover {
+                    background-color: $dark-blue;
+                }
+                &:active {
+                    box-shadow: 1px 1px 20px 0px rgba(26, 84, 231, 1);
+                }
             }
         }
         display: flex;
@@ -96,6 +89,11 @@
                 font-size: 14px;
                 font-family: $Sans;
                 border-bottom: 1px solid $blue;
+                &:hover {
+                    text-decoration: none;
+                    font-style: italic;
+                    color: $white;
+                }
             }
             .text__line {
                 padding-right: 12px;
