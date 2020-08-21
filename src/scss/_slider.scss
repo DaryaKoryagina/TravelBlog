@@ -4,6 +4,8 @@
             position: relative;
             display: block;
             width: 100%;
+            max-width: 100%;
+            min-width: 100%;
             .offer__sale_content {
                 position: relative;
                 .slider__fon {
@@ -28,8 +30,8 @@
 }
 
 .slider__text {
-    z-index: 2;
     position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -75,31 +77,33 @@
         }
         display: flex;
         justify-content: space-between;
-        .text__data {
-            display: flex;
-            align-items: center;
-            .data {
-                padding-right: 9px;
-                padding-right: 10px;
-                font-size: 14px;
-                font-family: $Sans;
-                color: $white;
-            }
-            a {
-                font-size: 14px;
-                font-family: $Sans;
-                border-bottom: 1px solid $blue;
-                &:hover {
-                    text-decoration: none;
-                    font-style: italic;
-                    color: $white;
-                }
-            }
-            .text__line {
-                padding-right: 12px;
-                border-left: 1.5px solid $white;
-                height: 13px;
-            }
+    }
+}
+
+.text__data {
+    display: flex;
+    align-items: center;
+    .data {
+        padding-right: 9px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-family: $Sans;
+        color: $white;
+    }
+    a {
+        font-size: 14px;
+        font-family: $Sans;
+        border-bottom: 1px solid $blue;
+        &:hover {
+            text-decoration: none;
+            font-style: italic;
+            color: $white;
+            font-weight: 500;
         }
+    }
+    .text__line {
+        padding-right: 12px;
+        border-left: 1.5px solid $white;
+        height: 13px;
     }
 }

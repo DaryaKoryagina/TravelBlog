@@ -1,0 +1,55 @@
+.travel__inform {
+    background-color: $light-grey;
+    .inform__full {
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 35px;
+        padding-bottom: 48px;
+        display: flex;
+        .inform__part {
+            &_rt {
+                flex: 0 0 47.6%;
+                width: 47.6%;
+            }
+            flex: 0 0 47.6%;
+            width: 47.6%;
+            &_title {
+                padding-top: 13px;
+                font-family: $Serif;
+                font-size: 24px;
+                font-weight: 500;
+                color: $black;
+            }
+            &_img {
+                position: relative;
+                .text_img {
+                    top: 199px;
+                    position: absolute;
+                    font-family: $Sans;
+                    background-color: $red;
+                    color: $white;
+                    padding: 7px 19px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    &_rt {
+                        background-color: $black;
+                    }
+                }
+                .inform_img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .text__data {
+                padding-top: 11px;
+                a {
+                    &:hover {
+                        color: $black;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
