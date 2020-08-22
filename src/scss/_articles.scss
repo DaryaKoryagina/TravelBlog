@@ -1,55 +1,99 @@
-.articles__contant {
-    margin-top: 48px;
-    position: relative;
-    background-image: url(../images/doroga.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    .img__text__date {
-        padding-bottom: 29px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .text_img {
-            font-family: $Sans;
-            background-color: $red;
-            color: $white;
-            padding: 7px 19px;
-            font-size: 18px;
-            font-weight: 700;
+        .articles__contant {
+            margin-top: 48px;
+            position: relative;
+            background-image: url(../images/doroga.jpg);
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .img__text__date {
+                padding-bottom: 29px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .text_img {
+                    font-family: $Sans;
+                    background-color: $red;
+                    color: $white;
+                    padding: 7px 19px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .text__data {
+                    padding-right: 32px;
+                }
+            }
         }
-        .text__data {
-            padding-right: 32px;
+        
+        .articles__inform {
+            padding-bottom: 20px;
+            .img__text {
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                line-height: 1.3;
+                padding-top: 197px;
+                padding-left: 14px;
+                &__title {
+                    display: flex;
+                    justify-content: center;
+                    font-family: $Serif;
+                    font-size: 48px;
+                    font-weight: 500;
+                    color: $white;
+                }
+                &__subtitle {
+                    font-family: $Serif;
+                    line-height: 1.5;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white;
+                }
+            }
         }
-    }
-}
-
-.articles__inform {
-    padding-bottom: 20px;
-    .img__text {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        line-height: 1.3;
-        padding-top: 197px;
-        padding-left: 14px;
-        &__title {
-            display: flex;
-            justify-content: center;
-            font-family: $Serif;
-            font-size: 48px;
-            font-weight: 500;
-            color: $white;
+        
+        .gallery__contant {
+            .gallery__text {
+                &__title {
+                    padding-bottom: 17px;
+                    font-family: $Serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+            &__item {
+                .data {
+                    color: $grey-dark;
+                }
+                .text__line {
+                    border-left: 1.5px solid $grey-dark;
+                }
+                a {
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+            &__img {
+                padding-bottom: 16px;
+                position: relative;
+                .gallery__bg {
+                    padding: 6.8px 18px;
+                    background: $green;
+                    font-size: 18px;
+                    font-family: $Sans;
+                    font-weight: 700;
+                    color: $white;
+                    position: absolute;
+                    top: 190px;
+                    left: 0;
+                }
+            }
         }
-        &__subtitle {
-            font-family: $Serif;
-            line-height: 1.5;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 500;
-            color: $white;
-        }
-    }
-}
