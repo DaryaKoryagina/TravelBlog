@@ -1,5 +1,5 @@
     .travel__inform {
-        background-color: $light-grey;
+        background-color: $grey;
         .inform__full {
             width: 100%;
             justify-content: space-between;
@@ -50,6 +50,14 @@
                         }
                     }
                 }
+            }
+        }
+        &_end {
+            img {
+                padding-top: 22px;
+            }
+            .text_img {
+                top: 216px;
             }
         }
     }
