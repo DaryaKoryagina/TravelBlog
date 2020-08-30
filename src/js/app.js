@@ -26,3 +26,27 @@ $(document).ready(function($) {
         // });
     };
 })
+let btnHeader = document.querySelector(".btn__seach");
+let btnClose = document.querySelector(".template__btn");
+let menuItem = document.querySelector(".menu__item");
+let menuTemplate = document.querySelector(".menu__template");
+let headerSearch = document.querySelector(".header__full__search");
+const toggleMenu = () => {
+    headerSearch.classList.toggle("active");
+}
+btnHeader.addEventListener('click', function() {
+    toggleMenu();
+});
+btnClose.addEventListener('click', function() {
+    toggleMenu();
+});
+
+document.addEventListener('click', e => {
+    let target = e.target;
+    let its_headerSearch = target == headerSearch || headerSearch.contains(target);
+    let headerSearch_is_active = headerSearch.classList.contains('active');
+
+    if (!its_headerSearch && headerSearch_is_active) {
+        toggleMenu();
+    }
+});

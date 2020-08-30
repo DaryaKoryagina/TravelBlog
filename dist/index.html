@@ -12,15 +12,22 @@
 <body>
     <header>
         <section class="header">
-            <div class="header__full">
+            <!-- <div class="header__full">
                 <div class="container">
                     <div class="row">
                         <div class="menu_left">
                             <div class="template__text">
                                 <a href="#">Blog template</a>
-                                <button class="btn__seach">
-                    <img  class="img_search" src="images/seach.png" alt="search">
-                 </button>
+                                <div class="header__full__search">
+                                    <button class="btn__seach">
+                                        <img class="img_search" src="images/seach.png" alt="search">
+                                        </button>
+
+                                    <div class="menu__template">
+                                        <input type="text">
+                                        <button class="template__btn"> <i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="menu__item">
                                 <a href="#">About</a>
@@ -40,6 +47,30 @@
                                 <i class="fas fa-circle"></i>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="header_small">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <div class="menu_left">
+                                <img src="images/logo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-auto menu__item">
+                            <div class="menu__icon">
+                                <div class="round">
+                                    <div class="round__item"></div>
+                                    <div class="round__icon"> <i class="fas fa-info"></i></div>
+                                </div>
+                                <div class="bars">
+                                    <div class="bars__item"></div>
+                                    <div class="bars__icon"> <i class="fas fa-bars"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -360,7 +391,7 @@
     <section class="travel__articles">
         <div class="container">
             <div class="row">
-                <div class="articles__contant">
+                <div class="articles__content">
                     <div class="articles__inform">
                         <div class="img__articles">
                         </div>
@@ -381,11 +412,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery__contant">
+                <div class="gallery__content">
 
-                    <div class="gallery__contant__value">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/lime.png" alt="lime">
                                 <div class="gallery__bg">Nature</div>
                             </div>
@@ -394,7 +425,7 @@
                             <div class="gallery__text__title">
                                 Donec elementum dui semper, pretium dui</br> quis, pretium nisl.
                             </div>
-                            <div class="text__data gallery__contant__item ">
+                            <div class="text__data gallery__content__item ">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>
@@ -402,9 +433,9 @@
                         </div>
                     </div>
 
-                    <div class="gallery__contant__value">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/books.png" alt="books">
                                 <div class="gallery__bg gallery__bg_bl">People</div>
                             </div>
@@ -413,16 +444,16 @@
                             <div class="gallery__text__title">
                                 Vestibulum ante ipsum primis in faucibus orci</br> luctus et ultrices posuere cubilia Curae.
                             </div>
-                            <div class="text__data gallery__contant__item">
+                            <div class="text__data gallery__content__item">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__contant__value">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/city.png" alt="citu">
                                 <div class="gallery__bg gallery__bg_bk">Tech</div>
                             </div>
@@ -431,7 +462,7 @@
                             <div class="gallery__text__title">
                                 Sed arcu ipsum, convallis quis porttitor bibe-<br>ndum, convallis non enim.
                             </div>
-                            <div class="text__data gallery__contant__item ">
+                            <div class="text__data gallery__content__item ">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>
@@ -439,10 +470,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery__contant">
-                    <div class="gallery__contant__value">
+                <div class="gallery__content">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/tents.png" alt="tents">
                                 <div class="gallery__bg gallery__bg_rd">Trips</div>
                             </div>
@@ -451,16 +482,16 @@
                             <div class="gallery__text__title">
                                 Donec elementum dui semper, pretium dui</br> quis, pretium nisl.
                             </div>
-                            <div class="text__data gallery__contant__item ">
+                            <div class="text__data gallery__content__item ">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__contant__value">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/reservoir.png" alt="reservoir">
                                 <div class="gallery__bg gallery__bg_rd">Trips</div>
                             </div>
@@ -469,16 +500,16 @@
                             <div class="gallery__text__title">
                                 Vestibulum ante ipsum primis in faucibus orci</br> luctus et ultrices posuere cubilia Curae.
                             </div>
-                            <div class="text__data gallery__contant__item">
+                            <div class="text__data gallery__content__item">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__contant__value">
+                    <div class="gallery__content__value">
                         <a href="#">
-                            <div class="gallery__contant__img">
+                            <div class="gallery__content__img">
                                 <img src="images/Bridge.png" alt="Bridge">
                                 <div class="gallery__bg gallery__bg_pr">Fashion</div>
                             </div>
@@ -487,7 +518,7 @@
                             <div class="gallery__text__title">
                                 Sed arcu ipsum, convallis quis porttitor bibe-<br>ndum, convallis non enim.
                             </div>
-                            <div class="text__data gallery__contant__item ">
+                            <div class="text__data gallery__content__item ">
                                 <div class="data"> 11 septemvber 2016</div>
                                 <div class="text__line"></div>
                                 <a href="#">John Doe</a>

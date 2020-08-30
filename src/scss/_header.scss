@@ -4,18 +4,90 @@ header {
         display: flex;
         align-items: center;
         margin: auto;
+        &__search {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            &.active {
+                .menu__template {
+                    width: 400px;
+                }
+            }
+            .btn__seach {
+                height: 100%;
+                width: 60px;
+                background-color: $grey;
+                border: none;
+                &:hover {
+                    background-color: $light-blue;
+                }
+                &:active {
+                    border: none;
+                    outline: none;
+                    background-color: $light-grey;
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+                .img_search {
+                    padding: 1.3rem 0.7rem;
+                }
+            }
+            .menu__template {
+                background: $white;
+                position: absolute;
+                z-index: 1;
+                left: 60px;
+                overflow: hidden;
+                width: 0px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                transition: 0.4s width;
+                input {
+                    margin-left: 53px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30px;
+                    width: 243px;
+                    border: 1px solid $grey-dark;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .template__btn {
+                    margin: 0;
+                    width: 49px;
+                    border: none;
+                    height: 42px;
+                    &:hover {
+                        background: $light-blue;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:active {
+                        background: $grey-dark;
+                    }
+                }
+            }
+        }
         .menu_left {
             display: flex;
             align-items: center;
             flex: 0 0 55%;
             width: 55%;
-            height: auto;
+            height: 68px;
             .template__text {
                 display: flex;
                 align-items: center;
+                height: 100%;
                 a {
+                    height: 100%;
                     padding-right: 33px;
-                    height: 68px;
                     display: flex;
                     align-items: center;
                     color: $white;
@@ -39,27 +111,8 @@ header {
                     }
                 }
             }
-            .btn__seach {
-                background-color: $grey;
-                border: none;
-                margin-right: 29px;
-                &:hover {
-                    background-color: $light-blue;
-                }
-                &:active {
-                    border: none;
-                    outline: none;
-                    background-color: $light-grey;
-                }
-                &:focus {
-                    border: none;
-                    outline: none;
-                }
-                .img_search {
-                    padding: 1.3rem 0.7rem;
-                }
-            }
             .menu__item {
+                padding-left: 27px;
                 a {
                     font-family: $Sans;
                     font-weight: 500;
@@ -79,7 +132,9 @@ header {
             height: auto;
             display: flex;
             a {
-                padding-top: 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
                 font-family: $Sans;
                 font-weight: 500;
                 color: $blue;
@@ -97,6 +152,61 @@ header {
                 color: $blue;
                 font-size: 6px;
                 padding: 0 2px;
+            }
+        }
+    }
+    .header_small {
+        padding: 8px 8px;
+        .menu_left {
+            img {
+                width: 170px;
+                border-radius: 50%;
+            }
+        }
+        .menu__item {
+            display: flex;
+            .menu__icon {
+                justify-content: end;
+                margin: auto;
+                align-items: center;
+                flex: 0 0 45%;
+                width: 45%;
+                height: auto;
+                display: flex;
+            }
+            .round {
+                align-items: center;
+                display: flex;
+                position: relative;
+                &__item {
+                    margin-right: 15px;
+                    position: relative;
+                    background: $azure;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 28px;
+                }
+                &__icon {
+                    position: absolute;
+                    z-index: 2;
+                    left: 19px;
+                }
+            }
+            .bars {
+                position: relative;
+                &__item {
+                    background: $grey;
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 5px;
+                    position: relative;
+                    border: 1px solid $grey-dark;
+                }
+                &__icon {
+                    position: absolute;
+                    top: 9px;
+                    left: 14px;
+                }
             }
         }
     }
