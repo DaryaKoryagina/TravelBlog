@@ -156,6 +156,7 @@ header {
         }
     }
     .header_small {
+        position: relative;
         padding: 8px 8px;
         .menu_left {
             img {
@@ -192,23 +193,79 @@ header {
                     left: 19px;
                 }
             }
-            .bars {
-                position: relative;
-                &__item {
-                    background: $grey;
-                    width: 42px;
-                    height: 42px;
-                    border-radius: 5px;
-                    position: relative;
-                    border: 1px solid $grey-dark;
-                }
-                &__icon {
-                    position: absolute;
-                    top: 9px;
-                    left: 14px;
+        }
+    }
+    .menu__open {
+        width: 0;
+        overflow: hidden;
+        position: fixed;
+        z-index: 3;
+        background-color: $grey;
+        transition: 0.4s width;
+        &.active {
+            width: 100%;
+            top: 0;
+            height: 100%;
+        }
+        // padding: 30px 30px;
+        &__value {
+            flex-direction: column;
+            margin: auto;
+            line-height: 3;
+            display: flex;
+            justify-content: center;
+            a {
+                color: $blue;
+                font-size: 28px;
+                font-weight: 500;
+                font-family: $ProximaReg;
+            }
+        }
+        &__img {
+            img {
+                padding-bottom: 317px;
+                width: 170px;
+                border-radius: 50%;
+                margin-top: 60px;
+            }
+        }
+        .inform {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        .bars {
+            &__icon {
+                top: 10px;
+                .fa-times {
+                    font-size: 22px;
                 }
             }
         }
+    }
+}
+
+.bars {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    &__item {
+        background: $grey;
+        width: 42px;
+        height: 42px;
+        border-radius: 5px;
+        position: relative;
+        border: 1px solid $grey-dark;
+    }
+    &__icon {
+        position: absolute;
+        top: 9px;
+        left: 14px;
+    }
+    .bars__close {
+        margin: 16px 39px;
     }
 }
 
