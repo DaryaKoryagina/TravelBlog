@@ -6,6 +6,9 @@
             padding-top: 35px;
             padding-bottom: 48px;
             display: flex;
+            @media (max-width: 600px) {
+                flex-wrap: wrap;
+            }
             .inform__part {
                 &_rt {
                     flex: 0 0 48.1%;
@@ -13,12 +16,29 @@
                 }
                 flex: 0 0 48%;
                 width: 48%;
+                @media (max-width: 600px) {
+                    flex: 0 0 100%;
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
                 &_title {
                     padding-top: 13px;
                     font-family: $Serif;
                     font-size: 24px;
                     font-weight: 500;
                     color: $black;
+                    @media (max-width: 991px) {
+                        font-size: 17px;
+                    }
+                    // @media (min-width: 992px) {
+                    //     font-size: 17px;
+                    // }
+                    @media (max-width: 767px) {
+                        min-height: 114px;
+                    }
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        top: 191px;
+                    }
                 }
                 &_img {
                     position: relative;
@@ -31,6 +51,24 @@
                         padding: 7px 19px;
                         font-size: 18px;
                         font-weight: 700;
+                        @media (min-width: 992px) and (max-width: 1199px) {
+                            top: 140px;
+                        }
+                        @media (max-width: 991px) {
+                            top: 97px;
+                        }
+                        // @media (min-width: 992px) {
+                        //     top: 191px;
+                        // }
+                        @media (max-width: 767px) {
+                            top: 64px;
+                        }
+                        @media (max-width: 600px) {
+                            top: 164px;
+                        }
+                        @media (min-width: 320px) and (max-width: 600px) {
+                            top: 80px;
+                        }
                         &_rt {
                             background-color: $black;
                         }

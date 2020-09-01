@@ -1,9 +1,13 @@
 header {
     .header__full {
+        display: none;
         width: 100%;
-        display: flex;
         align-items: center;
         margin: auto;
+        @media (min-width: 992px) {
+            display: flex;
+            display: block;
+        }
         &__search {
             display: flex;
             align-items: center;
@@ -94,6 +98,10 @@ header {
                     font-size: 24px;
                     font-family: $Sans;
                     position: relative;
+                    @media (min-width: 992px) {
+                        font-size: 16px;
+                        padding-left: 27px;
+                    }
                     &:before {
                         z-index: -1;
                         content: "";
@@ -113,12 +121,22 @@ header {
             }
             .menu__item {
                 padding-left: 27px;
+                // @media (min-width: 992px) {
+                //     padding-left: 18px;
+                // }
+                @media (min-width: 991px) {
+                    padding: 0;
+                }
                 a {
                     font-family: $Sans;
                     font-weight: 500;
                     color: $grey-dark;
                     font-size: 18px;
                     padding-right: 28px;
+                    @media (min-width: 992px) {
+                        font-size: 16px;
+                        padding-right: 11px;
+                    }
                     &:hover {
                         text-decoration: none;
                         color: $black;
@@ -140,6 +158,10 @@ header {
                 color: $blue;
                 font-size: 18px;
                 margin-right: 33.6px;
+                @media (min-width: 992px) {
+                    font-size: 16px;
+                    margin-right: 13.6px;
+                }
                 &:hover {
                     text-decoration: none;
                 }
@@ -156,8 +178,15 @@ header {
         }
     }
     .header_small {
+        display: none;
         position: relative;
         padding: 8px 8px;
+        @media (max-width: 991px) {
+            display: block;
+        }
+        @media (min-width: 991px) {
+            padding: 0;
+        }
         .collaps__value {
             font-size: 23px;
             font-family: $Sans;
@@ -179,12 +208,26 @@ header {
             img {
                 width: 170px;
                 border-radius: 50%;
+                @media (max-width: 340px) {
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 992px) {
+                    width: 50px;
+                    border-radius: 50%;
+                }
             }
         }
         .menu__item {
             padding: 18px 18px;
             justify-content: space-between;
             display: flex;
+            @media (max-width: 340px) {
+                flex-direction: column;
+                text-align: center;
+            }
+            @media (max-width: 991px) {
+                padding: 0;
+            }
             .menu__icon {
                 justify-content: end;
                 margin: auto;
@@ -197,6 +240,9 @@ header {
             .btns__main {
                 display: flex;
                 align-items: center;
+                @media (max-width: 340px) {
+                    justify-content: center;
+                }
             }
             .round {
                 align-items: center;

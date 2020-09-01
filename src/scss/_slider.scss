@@ -1,4 +1,7 @@
 .slider {
+    @media (max-width: 576px) {
+        display: none;
+    }
     .slider__blog {
         .slider-cell {
             position: relative;
@@ -42,6 +45,9 @@
         display: flex;
         justify-content: center;
         padding-bottom: 27px;
+        @media (max-width: 991px) {
+            padding-top: 25px;
+        }
     }
     &__text {
         padding-right: 15px;
@@ -53,12 +59,24 @@
             font-weight: 500;
             font-size: 48px;
             color: $white;
+            @media (max-width: 992px) {
+                font-size: 43px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                font-size: 29px;
+            }
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
         }
     }
     &__bg {
         padding-bottom: 39px;
         flex: 0 0 100%;
         padding-top: 219px;
+        @media (max-width: 991px) {
+            padding-top: 61px;
+        }
         .text__bg {
             .text {
                 padding: 6.8px 18px;
