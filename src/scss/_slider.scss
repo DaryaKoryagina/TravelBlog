@@ -45,6 +45,9 @@
         display: flex;
         justify-content: center;
         padding-bottom: 27px;
+        img {
+            height: 117px;
+        }
         @media (max-width: 991px) {
             padding-top: 25px;
         }

@@ -8,7 +8,7 @@
 .articles__content {
     margin-top: 48px;
     position: relative;
-    background-image: url(../images/doroga.jpg);
+    background-image: url(../images/let.png);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,7 @@
     }
     &__img {
         img {
+            min-height: 259px;
             width: 100%;
         }
         padding-bottom: 16px;

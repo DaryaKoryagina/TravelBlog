@@ -75,7 +75,14 @@
                     }
                     .inform_img {
                         img {
+                            object-fit: cover;
                             width: 100%;
+                            @media (min-width: 992px) {
+                                max-height: 259px;
+                            }
+                            @media(max-width: 991px) {
+                                height: 259px;
+                            }
                         }
                     }
                 }
